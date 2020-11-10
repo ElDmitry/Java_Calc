@@ -1,0 +1,42 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Calc {
+
+public static String main(String[]args){
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.print("Введите число:");
+    double numb1 = scanner.nextDouble();
+
+    System.out.print("Введите число:");
+    double numb2 = scanner.nextDouble();
+
+    System.out.print("Действие?(*, /, +, -):");
+    String operation = scanner.next();
+
+        switch (operation) {
+            case '+':
+               double result = numb1 + numb2;
+                System.out.println("Ответ" + result);
+                break;
+            case '-':
+               double result = numb1 - numb2;
+               System.out.println("Ответ" + result);
+                break;
+            case '*':
+               double result = numb1 * numb2;
+                System.out.println("Ответ" + result);
+                break;
+            case '/':
+                double result = numb1 / numb2;
+                System.out.println("Ответ" + result);
+                break;
+            default:
+                System.out.println("result");
+        }
+        return "result";
+    }
+}
+}
