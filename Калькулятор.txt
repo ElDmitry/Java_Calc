@@ -7,31 +7,31 @@ public class Calc {
 public static String main(String[]args){
     Scanner scanner = new Scanner(System.in);
 
-    System.out.print("Введите число:");
+    System.out.print("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ:");
     double numb1 = scanner.nextDouble();
 
-    System.out.print("Введите число:");
+    System.out.print("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ:");
     double numb2 = scanner.nextDouble();
 
-    System.out.print("Действие?(*, /, +, -):");
+    System.out.print("Р”РµР№СЃС‚РІРёРµ?(*, /, +, -):");
     String operation = scanner.next();
 
         switch (operation) {
             case '+':
                double result = numb1 + numb2;
-                System.out.println("Ответ" + result);
+                System.out.println("РћС‚РІРµС‚" + result);
                 break;
             case '-':
                double result = numb1 - numb2;
-               System.out.println("Ответ" + result);
+               System.out.println("РћС‚РІРµС‚" + result);
                 break;
             case '*':
                double result = numb1 * numb2;
-                System.out.println("Ответ" + result);
+                System.out.println("РћС‚РІРµС‚" + result);
                 break;
             case '/':
                 double result = numb1 / numb2;
-                System.out.println("Ответ" + result);
+                System.out.println("РћС‚РІРµС‚" + result);
                 break;
             default:
                 System.out.println("result");
